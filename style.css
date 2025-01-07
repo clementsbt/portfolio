@@ -4,8 +4,46 @@ body{
 
 header{
     display: flex;
-    background-color: black;
     height: 4rem;
     width: 100%;
-    color: blanchedalmond;
+    color: black;
+    flex-direction: row;
+}
+
+.logo{
+display: flex;
+flex-shrink: 0;
+height: 4rem;
+width: 7rem;
+}
+
+.logo a {
+display: flex;
+width: 100%;
+height: auto;
+}
+
+.logo a img {
+width: 100%;
+height: auto;
+}
+
+nav {
+display: flex;
+flex-grow: 1;
+width: 100%;
+height: auto;
+}
+
+.element_nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-right: 1rem;
+    align-items: center;
+    justify-content: end;
+}
+
+.element_nav ul {
+    gap: 10px;
 }

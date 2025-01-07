@@ -1,0 +1,11 @@
+body{
+    margin: 0%;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    height: 4rem;
+    width: 100%;
+    color: blanchedalmond;
+}

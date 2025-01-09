@@ -80,4 +80,17 @@ nav {
 .profilePictureInCards{
     width: 20%;
     height: auto;
+    margin-left: 10%; 
+    margin-top: 7%;
+}
+
+.aPropos{
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 406;
+    font-style: normal;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -17%;
+    margin-right: 20%;
 }

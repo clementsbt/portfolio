@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 header {
     display: flex;
     height: 4rem;
@@ -11,6 +13,21 @@ header {
     background-color: white; 
 }
 
+.TitleFont {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      font-size: 1.5rem;
+  }
+
+.FontNavBar {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
 
 .logo {
     display: flex;
@@ -60,9 +77,7 @@ nav {
     object-fit: cover;
 }
 
-
-.FontNavBar {
-    font-family: "Roboto", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
+.profilePictureInCards{
+    width: 20%;
+    height: auto;
+}

@@ -77,14 +77,7 @@ nav {
     object-fit: cover;
 }
 
-.profilePictureInCards{
-    width: 20%;
-    height: auto;
-    margin-left: 10%; 
-    margin-top: 7%;
-}
-
-.aPropos{
+.presentationTxt{
     font-family: "Oswald", serif;
     font-optical-sizing: auto;
     font-weight: 406;
@@ -92,5 +85,15 @@ nav {
     display: flex;
     justify-content: flex-end;
     margin-top: -17%;
-    margin-right: 20%;
+    margin-right: 10%;
 }
+
+.profilePictureInCards{
+    width: 20%;
+    height: auto;
+    margin-left: 10%; 
+    margin-top: 7%;
+}
+
+
+

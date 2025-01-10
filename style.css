@@ -84,7 +84,7 @@ nav {
     font-style: normal;
     display: flex;
     justify-content: flex-end;
-    margin-top: -17%;
+    margin-top: 5%;
     margin-right: 10%;
 }
 
@@ -95,5 +95,34 @@ nav {
     margin-top: 7%;
 }
 
+.presentation{
 
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -27%;
+    margin-left: 40%;
 
+}
+
+.langues{
+
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2.5%;
+    margin-left: 54%;
+
+}
+
+.SoftSkills{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2.5%;
+    margin-left: 67%;
+}
+
+.Hobbies {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2.5%;
+    margin-left: 80%;
+}

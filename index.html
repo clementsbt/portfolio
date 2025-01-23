@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Clément Subtil</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -17,21 +16,42 @@
             </a>
         </div>
         <nav>
-            <li class="element_nav">
-                <ul class="FontNavBar">A Propos</ul>
-                <ul class="FontNavBar">Compétences</ul>
-                <ul class="FontNavBar">Diplomes</ul>
-                <ul class="FontNavBar">Me Contacter</ul>
-                <ul class="FontNavBar">CV</ul>
-            </li>
+            <ul class="nav-bar">
+                <li class="FontNavBar"><a href="#sectionAPropos">A Propos</a></li>
+                <li class="FontNavBar"><a href="#sectionCompetences">Compétences</a></li>
+                <li class="FontNavBar"><a href="#sectionContact">Me Contacter</a></li>
+            </ul>
         </nav>
     </header>
-
-
+    
     <section class="full-screen-image">
         <img class="fit-picture" src="img/MountainWalpaper.png" alt="Wallpaper Mountain"/>
     </section>
+    
 
+    <H1 id="sectionAPropos" class="TitleFont"><u>A Propos</u></H1>
+    <section class="buttons">
+        <button id="btnPresentation" class="presentation" type="button">Presentation</button>
+        <button id="btnLangues" class="langues" type="button">Languages</button>
+        <button id="btnSoftSkills" class="SoftSkills" type="button">Soft skills</button>
+        <button id="btnHobbies" class="Hobbies" type="button">Hobbies</button>
+    </section>
+    <img class="idPicture" src="img/idPicture.jpg" alt="idPicture"/>
+    <div>
+        <h3 class="presentationTxt">Student in Bachelor RPI (Responsable de Projet Informatique) at the Isitech school...</h3> 
+    </div>
+
+
+    <H1 id="sectionCompetences" class="competence"><u>Competence / outils utilises</u></H1>
+    <section class="full-screen-image">
+        <img class="fit-picture" src="img/competence.jpg" alt="Wallpaper Mountain"/>
+    </section>
+
+
+    <H1 id="sectionContact" class="competence"><u>Me Contacter</u></H1>
+    <h3 class="contacte">Vous pouvez sois me contacter par mail avec l'adresse mail <u> clementsubtil@icloud.com </u>ou via LinkedIn</h3>
+    <a href="https://www.linkedin.com/in/cl%C3%A9ment-subtil-45690125b/" target="_blank">
+        <img class="linkedin" src="img/linkedin.png" alt="linkedin">
+    </a>
 </body>
 </html>
-

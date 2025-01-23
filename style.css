@@ -1,70 +1,167 @@
 
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    overflow-y: auto; 
+}
+
 header {
     display: flex;
     height: 4rem;
     width: 100%;
     color: black;
-    flex-direction: row;
     position: fixed; 
     top: 0;
     left: 0;
     background-color: white; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem; 
+    z-index: 100; 
 }
-
 
 .logo {
-    display: flex;
-    flex-shrink: 0;
     height: 4rem;
-    width: 7rem;
-}
-
-.logo a {
-    display: flex;
-    width: 100%;
-    height: auto;
+    width: auto;
 }
 
 .logo a img {
-    width: 100%;
-    height: auto;
+    max-height: 100%;
+    max-width: 100%;
 }
-
 
 nav {
     display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: end;
+}
+
+.nav-bar {
+    display: flex; 
+    list-style: none; 
+    gap: 1rem; 
+margin-right: 3rem;
+
+}
+
+.FontNavBar {
+
+    font-size: 1.5rem; 
+    cursor: pointer; 
+    color: black; 
 }
 
 .element_nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-
-.full-screen-image {
-    margin-top: 4rem; 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: line;
+    margin: 1;
+    padding: 1;
+
+}
+.presentationTxt {
+    font-size: 2rem; 
+    line-height: 1.8;
+    text-align: right;
+    margin: 1rem 0; 
+    margin-left: 40%;
+    margin-top: -15%;
+
 }
 
 .full-screen-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 150%;
+
+}
+
+.idPicture{
+    width: 20%;
+    margin-left: 10%;
+}
+.TitleFont {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
 }
 
 
-.FontNavBar {
-    font-family: "Roboto", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: line;
 
-  
+    presentationTxtpresentationTxt
+}
+
+.presentation, .langues, .SoftSkills, .Hobbies {
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    border: 0.1rem solid black;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.competence {
+    font-size: 3.5rem; 
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+html {
+    scroll-behavior: smooth;
+}
+.contacte {
+    font-size: 2rem; 
+    margin-left: 1rem;
+    margin-top: 8rem;
+
+}
+
+.linkedin {
+    width: 15%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        flex-direction: line;
+    }
+
+    .TitleFont {
+        font-size: 1.5rem;
+    }
+
+
+
+    .presentation, .langues, .SoftSkills, .Hobbies {
+        width: 90%;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+    .TitleFont {
+        font-size: 1.2rem;
+    }
+
+    .profilePictureInCards {
+        width: 100%;
+    }
+
+    .presentation, .langues, .SoftSkills, .Hobbies {
+        font-size: 0.9rem;
+    }
+}

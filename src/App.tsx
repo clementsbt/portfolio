@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const scrollToNextSection = () => {
   const sections = ['about', 'parcours', 'skills', 'contact']
-  const scrollPos = window.scrollY + window.innerHeight * 0.7
+  // Scroll vers la section suivante
   for (const section of sections) {
     const el = document.getElementById(section)
     if (el) {

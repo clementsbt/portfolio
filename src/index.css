@@ -263,14 +263,14 @@ body {
   color: var(--text-secondary);
 }
 
-/* Projects */
-.projects-grid {
+/* Parcours (Experience + Projects) */
+.parcours-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
-.project-card {
+.parcours-card {
   background: var(--bg-card);
   border-radius: 12px;
   padding: 1.5rem;
@@ -278,20 +278,40 @@ body {
   transition: all 0.2s ease;
 }
 
-.project-card:hover {
+.parcours-card:hover {
   border-color: var(--accent);
-  transform: translateY(-4px);
 }
 
-.project-card h3 {
+.parcours-card h3 {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
 }
 
-.project-card p {
+.parcours-card p {
   color: var(--text-secondary);
   font-size: 0.9375rem;
   margin-bottom: 1rem;
+}
+
+.parcours-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.parcours-header h3 {
+  margin-bottom: 0;
+}
+
+.parcours-header span {
+  font-size: 0.875rem;
+  color: var(--accent);
+  background: var(--accent-dim);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
 }
 
 .project-link {

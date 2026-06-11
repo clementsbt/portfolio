@@ -53,11 +53,26 @@
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    gap: 1rem;
+  .navbar {
+    padding: 0.75rem 0;
   }
+  
+  .nav-logo {
+    font-size: 1rem;
+  }
+  
+  .nav-links {
+    gap: 0.5rem;
+  }
+  
   .nav-links a {
-    font-size: 0.875rem;
+    font-size: 0.7rem;
+    padding: 0.25rem 0;
+  }
+  
+  .nav-links a:nth-child(4),
+  .nav-links a:nth-child(5) {
+    display: none;
   }
 }
 
@@ -385,11 +400,80 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .hero {
+    padding: 2rem 1rem;
+    min-height: auto;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+  
   .hero-content h1 {
     font-size: 2rem;
   }
   
-  .experience-header {
+  .hero-tagline {
+    font-size: 1rem;
+  }
+  
+  .hero-cta {
     flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-cta .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .about-grid,
+  .parcours-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .parcours-header {
+    flex-direction: column;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skill-item {
+    padding: 0.75rem 1rem;
+  }
+  
+  .contact {
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+  }
+  
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-links {
+    flex-direction: column;
+  }
+  
+  .contact-links .btn {
+    width: 100%;
+    text-align: center;
   }
 }

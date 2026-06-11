@@ -38,6 +38,7 @@ function App() {
       {/* Hero */}
       <section className="hero">
         <div className="container hero-content">
+          <img src="/profile.jpg" alt="Clément Subtil" className="hero-photo" />
           <h1>
             Clément <span>Subtil</span>
           </h1>

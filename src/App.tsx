@@ -269,12 +269,18 @@ function App() {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/clementsubtil"
+                href="https://www.linkedin.com/in/cl%C3%A9ment-subtil-45690125b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"
               >
                 LinkedIn
+              </a>
+              <a
+                href="tel:+33769865441"
+                className="btn btn-secondary"
+              >
+                📞 07 69 86 54 41
               </a>
             </div>
           </div>

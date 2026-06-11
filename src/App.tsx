@@ -261,7 +261,7 @@ function App() {
             </p>
             <div className="contact-links">
               <a
-                href="https://github.com/ClementSubtil"
+                href="https://github.com/clementsbt"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
@@ -269,7 +269,7 @@ function App() {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/cl%C3%A9ment-subtil/"
+                href="https://www.linkedin.com/in/clementsubtil"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-secondary"

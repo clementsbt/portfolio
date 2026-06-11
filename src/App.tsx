@@ -282,6 +282,12 @@ function App() {
               >
                 📞 07 69 86 54 41
               </a>
+              <a
+                href="mailto:clementsubtil@icloud.com"
+                className="btn btn-secondary"
+              >
+                ✉️ clementsubtil@icloud.com
+              </a>
             </div>
           </div>
         </div>

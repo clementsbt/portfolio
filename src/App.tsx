@@ -1,5 +1,20 @@
 import { useEffect, useState } from 'react'
 
+const scrollToNextSection = () => {
+  const sections = ['about', 'parcours', 'skills', 'contact']
+  const scrollPos = window.scrollY + window.innerHeight * 0.7
+  for (const section of sections) {
+    const el = document.getElementById(section)
+    if (el) {
+      const rect = el.getBoundingClientRect()
+      if (rect.top > 0) {
+        el.scrollIntoView({ behavior: 'smooth' })
+        break
+      }
+    }
+  }
+}
+
 function App() {
   const [typedText, setTypedText] = useState('')
   const [activeSection, setActiveSection] = useState('')
@@ -62,13 +77,16 @@ function App() {
           </h1>
           <p className="hero-tagline">{typedText || '...'}</p>
           <div className="hero-cta">
-            <a href="#projets" className="btn btn-primary">
+            <a href="#parcours" className="btn btn-primary">
               Voir mes projets
             </a>
             <a href="#contact" className="btn btn-secondary">
               Me contacter
             </a>
           </div>
+          <button onClick={scrollToNextSection} className="scroll-btn" aria-label="Passer à la section suivante">
+            ↓
+          </button>
         </div>
       </section>
 

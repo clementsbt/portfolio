@@ -125,22 +125,21 @@ function App() {
                 <li>Génération auto CI/CD et manifests</li>
                 <li>Déploiement sur AKS, GKE, EKS</li>
               </ul>
-              <p style={{ marginBottom: '1rem' }}>
-              <a
-                href="https://www.cortex.kodo-tech.com/fr"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: 'var(--accent)' }}
-              >
-                Voir la landing page →
-              </a>
-            </p>
               <div className="tags">
                 <span className="tag">React</span>
                 <span className="tag">TypeScript</span>
                 <span className="tag">Vite</span>
                 <span className="tag">Docker</span>
               </div>
+              <a
+                href="https://www.cortex.kodo-tech.com/fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+                style={{ marginTop: '1rem', display: 'inline-block' }}
+              >
+                Voir la landing page →
+              </a>
             </div>
 
             {/* Projects */}

@@ -2,7 +2,26 @@ import { useEffect, useState } from 'react'
 
 function App() {
   const [typedText, setTypedText] = useState('')
+  const [activeSection, setActiveSection] = useState('')
   const fullText = 'Développeur Fullstack'
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['about', 'parcours', 'skills', 'contact']
+      for (const section of sections) {
+        const el = document.getElementById(section)
+        if (el) {
+          const rect = el.getBoundingClientRect()
+          if (rect.top <= 100 && rect.bottom > 100) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   useEffect(() => {
     let i = 0
@@ -26,10 +45,10 @@ function App() {
             Clément<span>Subtil</span>
           </a>
           <div className="nav-links">
-            <a href="#about">À propos</a>
-            <a href="#parcours">Parcours</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" className={activeSection === 'about' ? 'active' : ''}>À propos</a>
+            <a href="#parcours" className={activeSection === 'parcours' ? 'active' : ''}>Parcours</a>
+            <a href="#skills" className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
+            <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a>
           </div>
         </div>
       </nav>

@@ -108,7 +108,7 @@ function App() {
               </ul>
               <p style={{ marginBottom: '1rem' }}>
               <a
-                href="https://www.cortex.kodo-tech.com/en"
+                href="https://www.cortex.kodo-tech.com/fr"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: 'var(--accent)' }}

@@ -19,6 +19,22 @@ function App() {
 
   return (
     <div className="app">
+      {/* Navigation */}
+      <nav className="navbar">
+        <div className="container">
+          <a href="#" className="nav-logo">
+            Clément<span>Subtil</span>
+          </a>
+          <div className="nav-links">
+            <a href="#about">À propos</a>
+            <a href="#experience">Expérience</a>
+            <a href="#projets">Projets</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero */}
       <section className="hero">
         <div className="container hero-content">

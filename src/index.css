@@ -67,8 +67,8 @@
   --bg-card: #1a1a1a;
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
-  --accent: #22c55e;
-  --accent-dim: rgba(34, 197, 94, 0.15);
+  --accent: #f97316;
+  --accent-dim: rgba(249, 115, 22, 0.15);
 }
 
 body {
@@ -97,7 +97,7 @@ body {
   text-align: center;
   padding: 4rem 2rem;
   background: 
-    radial-gradient(ellipse at top, rgba(34, 197, 94, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at top, rgba(249, 115, 22, 0.08) 0%, transparent 60%),
     var(--bg-primary);
 }
 
@@ -141,7 +141,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: #16a34a;
+  background: #ea580c;
   transform: translateY(-2px);
 }
 

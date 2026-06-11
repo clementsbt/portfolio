@@ -287,7 +287,12 @@ function App() {
         </div>
       </footer>
 
-      <button onClick={scrollToNextSection} className="scroll-btn" aria-label="Passer à la section suivante">
+      <button 
+        onClick={scrollToNextSection} 
+        className="scroll-btn" 
+        aria-label="Passer à la section suivante"
+        style={{ display: activeSection === 'contact' ? 'none' : 'flex' }}
+      >
         ↓
       </button>
     </div>

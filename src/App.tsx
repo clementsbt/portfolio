@@ -84,10 +84,7 @@ function App() {
               Me contacter
             </a>
           </div>
-          <button onClick={scrollToNextSection} className="scroll-btn" aria-label="Passer à la section suivante">
-            ↓
-          </button>
-        </div>
+          </div>
       </section>
 
       {/* About */}
@@ -289,6 +286,10 @@ function App() {
           <p>© 2026 Clément Subtil — Fait avec ⚛️ et beaucoup de café</p>
         </div>
       </footer>
+
+      <button onClick={scrollToNextSection} className="scroll-btn" aria-label="Passer à la section suivante">
+        ↓
+      </button>
     </div>
   )
 }

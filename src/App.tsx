@@ -146,8 +146,13 @@ function App() {
             <div className="parcours-card">
               <h3>🔥 Têtes Brûlées</h3>
               <p>
-                <strong>Site web du club de Speedriding</strong> à Valfréjus. Gestion des membres, événements, calendrier de présence et covoiturage.
+                <strong>Site web du club de Speedriding</strong> à Valfréjus. Gestion des membres avec validation FFVL, événements, calendrier de présence et covoiturage.
               </p>
+              <ul style={{ color: '#a0a0a0', marginBottom: '1rem', paddingLeft: '1.5rem', fontSize: '0.875rem' }}>
+                <li>Authentification sécurisée (NextAuth)</li>
+                <li>CI/CD automatique sur Vercel</li>
+                <li>Base de données PostgreSQL</li>
+              </ul>
               <div className="tags" style={{ marginBottom: '1rem' }}>
                 <span className="tag">Next.js</span>
                 <span className="tag">TypeScript</span>

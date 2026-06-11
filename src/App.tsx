@@ -107,8 +107,15 @@ function App() {
                 <li>Déploiement sur AKS, GKE, EKS</li>
               </ul>
               <p style={{ marginBottom: '1rem' }}>
-                <strong>Ma contribution :</strong> Développement de la landing page officielle en React.
-              </p>
+              <a
+                href="https://www.cortex.kodo-tech.com/en"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'var(--accent)' }}
+              >
+                Voir la landing page →
+              </a>
+            </p>
               <div className="tags">
                 <span className="tag">React</span>
                 <span className="tag">TypeScript</span>

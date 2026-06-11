@@ -146,13 +146,14 @@ function App() {
             <div className="parcours-card">
               <h3>🔥 Têtes Brûlées</h3>
               <p>
-                Projet personnel autour de <strong>l'actualité brôle-gueule</strong> et l'humour noir
-                français.
+                <strong>Site web du club de Speedriding</strong> à Valfréjus. Gestion des membres, événements, calendrier de présence et covoiturage.
               </p>
               <div className="tags" style={{ marginBottom: '1rem' }}>
-                <span className="tag">React</span>
+                <span className="tag">Next.js</span>
                 <span className="tag">TypeScript</span>
-                <span className="tag">Vercel</span>
+                <span className="tag">TailwindCSS</span>
+                <span className="tag">Prisma</span>
+                <span className="tag">PostgreSQL</span>
               </div>
               <a
                 href="https://tetes-brulees.vercel.app"

@@ -295,7 +295,7 @@ function App() {
 
       <footer>
         <div className="container">
-          <p>© 2026 Clément Subtil — Fait avec ⚛️ et beaucoup de café</p>
+          <p>© 2026 Clément Subtil</p>
         </div>
       </footer>
 

@@ -188,6 +188,33 @@ function App() {
             </div>
 
             <div className="parcours-card">
+              <h3>🏠 Serenity Pro Appart</h3>
+              <p>
+                <strong>Site de conciergerie et gestion locative</strong> à Valfréjus. Multi-langues (6 langues), SEO optimisé, formulaires de contact et design responsive.
+              </p>
+              <ul style={{ color: '#a0a0a0', marginBottom: '1rem', paddingLeft: '1.5rem', fontSize: '0.875rem' }}>
+                <li>Site multi-langues (FR, EN, DE, ES, IT, NL)</li>
+                <li>SEO (Schema.org, sitemap, OpenGraph)</li>
+                <li>Formulaire de contact avec API</li>
+                <li>Routes localisées</li>
+              </ul>
+              <div className="tags" style={{ marginBottom: '1rem' }}>
+                <span className="tag">Next.js</span>
+                <span className="tag">TypeScript</span>
+                <span className="tag">TailwindCSS</span>
+                <span className="tag">Vercel</span>
+              </div>
+              <a
+                href="https://serenityproappart.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Voir le projet →
+              </a>
+            </div>
+
+            <div className="parcours-card">
               <h3>🛠️ Portfolio</h3>
               <p>
                 Ce portfolio ! Développé from scratch en React + TypeScript.

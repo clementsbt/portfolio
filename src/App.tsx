@@ -88,7 +88,6 @@ function App() {
           </div>
         </div>
       </section>
-      </section>
 
       {/* About */}
       <section className="section" id="about">

@@ -38,6 +38,26 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Scroll reveal animation
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    )
+
+    document.querySelectorAll('.scroll-reveal').forEach((el) => {
+      observer.observe(el)
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
   useEffect(() => {
     let i = 0
     const timer = setInterval(() => {
@@ -94,7 +114,7 @@ function App() {
         <div className="container">
           <h2 className="section-title">À propos</h2>
           <div className="about-grid">
-            <div className="card">
+            <div className="card scroll-reveal">
               <h3>🎓 Formation</h3>
               <p>
                 Bachelor RP (Responsable de Projet Informatique) - <strong>2ème année</strong> à{' '}
@@ -102,7 +122,7 @@ function App() {
                 techniques.
               </p>
             </div>
-            <div className="card">
+            <div className="card scroll-reveal">
               <h3>💼 Expérience</h3>
               <p>
                 En alternance chez <strong>Kodo Tech</strong>, entreprise spécialisée dans
@@ -110,7 +130,7 @@ function App() {
                 leur produit phare.
               </p>
             </div>
-            <div className="card">
+            <div className="card scroll-reveal">
               <h3>⚡ Approche</h3>
               <p>
                 Développement orienté résultats, code propre et maintenable. Fan d'automatisation et
@@ -127,7 +147,7 @@ function App() {
           <h2 className="section-title">Parcours</h2>
           <div className="parcours-grid">
             {/* Experience */}
-            <div className="parcours-card">
+            <div className="parcours-card scroll-reveal">
               <div className="parcours-header">
                 <h3>Kodo Tech — Cortex</h3>
                 <span>Alternance</span>
@@ -160,7 +180,7 @@ function App() {
             </div>
 
             {/* Projects */}
-            <div className="parcours-card">
+            <div className="parcours-card scroll-reveal">
               <h3>🔥 Têtes Brûlées</h3>
               <p>
                 <strong>Site web du club de Speedriding</strong> à Valfréjus. Gestion des membres avec validation FFVL, événements, calendrier de présence et covoiturage.
@@ -187,7 +207,7 @@ function App() {
               </a>
             </div>
 
-            <div className="parcours-card">
+            <div className="parcours-card scroll-reveal">
               <h3>🏠 Serenity Pro Appart</h3>
               <p>
                 <strong>Site de conciergerie et gestion locative</strong> à Valfréjus. Multi-langues (6 langues), SEO optimisé, formulaires de contact et design responsive.
@@ -214,7 +234,7 @@ function App() {
               </a>
             </div>
 
-            <div className="parcours-card">
+            <div className="parcours-card scroll-reveal">
               <h3>🛠️ Portfolio</h3>
               <p>
                 Ce portfolio ! Développé from scratch en React + TypeScript.
@@ -243,35 +263,35 @@ function App() {
         <div className="container">
           <h2 className="section-title">Skills</h2>
           <div className="skills-grid">
-            <div className="skill-item">
+            <div className="skill-item scroll-reveal">
               <span className="skill-icon">⚛️</span>
               <span className="skill-name">React / TypeScript</span>
             </div>
-            <div className="skill-item">
+            <div className="skill-item scroll-reveal">
               <span className="skill-icon">☕</span>
               <span className="skill-name">Java</span>
             </div>
-            <div className="skill-item">
+            <div className="skill-item scroll-reveal">
               <span className="skill-icon">🐳</span>
               <span className="skill-name">Docker</span>
             </div>
-            <div className="skill-item">
+            <div className="skill-item scroll-reveal">
               <span className="skill-icon">🔧</span>
               <span className="skill-name">Git / GitHub</span>
             </div>
-            <div className="skill-item">
+            <div className="skill-item scroll-reveal">
               <span className="skill-icon">🔌</span>
               <span className="skill-name">n8n (Automation)</span>
             </div>
-            <div className="skill-item">
+            <div className="skill-item scroll-reveal">
               <span className="skill-icon">🦊</span>
               <span className="skill-name">OpenClaw</span>
             </div>
-            <div className="skill-item">
+            <div className="skill-item scroll-reveal">
               <span className="skill-icon">🗄️</span>
               <span className="skill-name">PostgreSQL</span>
             </div>
-            <div className="skill-item">
+            <div className="skill-item scroll-reveal">
               <span className="skill-icon">☁️</span>
               <span className="skill-name">Cloud (AWS/GCP)</span>
             </div>
